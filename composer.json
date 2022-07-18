@@ -1,0 +1,22 @@
+{
+    "name": "solusoftek/smartycharts",
+    "description": "ApexCharts for use in LiveWire",
+    "type": "library",
+    "require": {
+        "php": "^7.2|^7.3|^7.4|^8.0",
+        "illuminate/support": "^7.0|^8.0|^9.0",
+        "livewire/livewire": "^2.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0|^7.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "solusoftek",
+            "email": "solusoftek@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
