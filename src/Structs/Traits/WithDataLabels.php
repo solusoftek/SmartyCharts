@@ -10,6 +10,7 @@ trait WithDataLabels
     {
         $this->dataLabels = [
             'enabled' => false,
+            'style'   => [],
         ];
     }
 
@@ -22,6 +23,16 @@ trait WithDataLabels
     public function disabledDataLabels()
     {
         data_set($this->dataLabels, 'enabled', false);
+        return $this;
+    }
+
+    public function setDataLabelsStyle($fontName, $fontSize, $fontWeight = 'normal')
+    {
+        data_set($this->dataLabels, 'style', [
+            'fontSize'   => $fontSize,
+            'fontFamily' => $fontName,
+            'fontWeight' => $fontWeight
+        ]);
         return $this;
     }
 
